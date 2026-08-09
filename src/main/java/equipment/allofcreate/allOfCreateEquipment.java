@@ -6,7 +6,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.event.component.BuildCreativeModeTabEvent;
+import net.neoforged.neoforge.event.BuildCreativeModeTabEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -38,12 +38,14 @@ public class allOfCreateEquipment {
         modEventBus.addListener(this::addCreative);
     }
 
-    private void addCreative(BuildCreativeModeTabEvent event) {
+  private void addCreative(BuildCreativeModeTabEvent event) {
+        // Добавляем слитки во вкладку Ингредиентов
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ENDER_CRYSTAL_INGOT.get());
             event.accept(CRUDE_ENDER_INGOT.get());
             event.accept(ENDER_UPGRADE_SMITHING_TEMPLATE.get());
         }
+        // Добавляем оружие и броню во вкладку Боевого снаряжения
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ENDER_SWORD.get());
             event.accept(ENDER_ARMOR_HELMET.get());
@@ -51,5 +53,6 @@ public class allOfCreateEquipment {
             event.accept(ENDER_ARMOR_LEGGINGS.get());
             event.accept(ENDER_ARMOR_BOOTS.get());
         }
+    }
     }
 }
