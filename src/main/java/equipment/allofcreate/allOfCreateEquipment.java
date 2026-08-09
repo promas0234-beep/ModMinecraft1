@@ -72,8 +72,9 @@ public class allOfCreateEquipment {
             event.accept(ENDER_ARMOR_BOOTS.get());
         }
     }
-}
-    public static final DeferredHolder<Item, Item> HELMET = ENDER_ARMOR_HELMET;
+       public static final DeferredHolder<Item, Item> HELMET = ENDER_ARMOR_HELMET;
     public static final DeferredHolder<Item, Item> CHESTPLATE = ENDER_ARMOR_CHESTPLATE;
     public static final DeferredHolder<Item, Item> LEGGINGS = ENDER_ARMOR_LEGGINGS;
     public static final DeferredHolder<Item, Item> BOOTS = ENDER_ARMOR_BOOTS;
+}
+ 
