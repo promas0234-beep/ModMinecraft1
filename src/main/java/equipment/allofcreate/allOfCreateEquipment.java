@@ -1,4 +1,4 @@
-package equipment.allofcreate;
+package equipment.allofcreate.allofcreateequipment;
 
 import equipment.allofcreate.item.*;
 import net.minecraft.core.registries.BuiltInRegistries;
