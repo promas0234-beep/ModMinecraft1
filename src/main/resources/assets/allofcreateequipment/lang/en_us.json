@@ -1,0 +1,13 @@
+{
+  "itemGroup.allofcreateequipment": "Example Mod Tab",
+  "block.allofcreateequipment.example_block": "Example Block",
+  "item.allofcreateequipment.example_item": "Example Item",
+
+  "allofcreateequipment.configuration.title": "allOfCreateEquipment Configs",
+  "allofcreateequipment.configuration.section.allofcreateequipment.common.toml": "allOfCreateEquipment Configs",
+  "allofcreateequipment.configuration.section.allofcreateequipment.common.toml.title": "allOfCreateEquipment Configs",
+  "allofcreateequipment.configuration.items": "Item List",
+  "allofcreateequipment.configuration.logDirtBlock": "Log Dirt Block",
+  "allofcreateequipment.configuration.magicNumberIntroduction": "Magic Number Text",
+  "allofcreateequipment.configuration.magicNumber": "Magic Number"
+}

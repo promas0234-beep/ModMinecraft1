@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "allofcreateequipment:crude_ender_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "allofcreateequipment:ender_crystal_ingot"
+    }
+  ]
+}

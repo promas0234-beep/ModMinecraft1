@@ -1,0 +1,17 @@
+{
+  type createspouting,
+  ingredients [
+    {
+      item minecraftend_crystal
+    },
+    {
+      fluid deep_darkecho_fluid,
+      amount 250
+    }
+  ],
+  results [
+    {
+      item deep_darkecho_crystal
+    }
+  ]
+}

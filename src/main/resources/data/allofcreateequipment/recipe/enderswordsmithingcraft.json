@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "allofcreateequipment:enderupgradesmithingtemplate"
+  },
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "addition": {
+    "item": "allofcreateequipment:endercrystalingot"
+  },
+  "result": {
+    "id": "allofcreateequipment:ender_sword"
+  }
+}

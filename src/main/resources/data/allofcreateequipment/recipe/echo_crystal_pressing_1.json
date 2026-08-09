@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "deep_dark:echo_crystal"
+    }
+  ],
+  "results": [
+    {
+      "item": "allofcreateequipment:crude_ender_ingot"
+    }
+  ]
+}
