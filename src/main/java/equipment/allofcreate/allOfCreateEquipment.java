@@ -15,19 +15,19 @@ public class allOfCreateEquipment {
     public static final String MODID = "allofcreateequipment";
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(BuiltInRegistries.ITEM, MODID);
 
-    // Предметы мода
+    // Регистрация предметов
     public static final DeferredHolder<Item, Item> ENDER_CRYSTAL_INGOT = ITEMS.register("ender_crystal_ingot", () -> new EndercrystalingotItem());
     public static final DeferredHolder<Item, Item> CRUDE_ENDER_INGOT = ITEMS.register("crude_ender_ingot", () -> new CrudeenderingotItem());
     public static final DeferredHolder<Item, Item> ENDER_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("ender_upgrade_smithing_template", () -> new EnderupgradesmithingtemplateItem());
     public static final DeferredHolder<Item, Item> ENDER_SWORD = ITEMS.register("ender_sword", () -> new EnderSwordItem());
 
-    // Части брони
+    // Регистрация брони
     public static final DeferredHolder<Item, Item> ENDER_ARMOR_HELMET = ITEMS.register("ender_armor_helmet", () -> new EnderArmorItem.Helmet());
     public static final DeferredHolder<Item, Item> ENDER_ARMOR_CHESTPLATE = ITEMS.register("ender_armor_chestplate", () -> new EnderArmorItem.Chestplate());
     public static final DeferredHolder<Item, Item> ENDER_ARMOR_LEGGINGS = ITEMS.register("ender_armor_leggings", () -> new EnderArmorItem.Leggings());
     public static final DeferredHolder<Item, Item> ENDER_ARMOR_BOOTS = ITEMS.register("ender_armor_boots", () -> new EnderArmorItem.Boots());
 
-    // Переменные-мосты для процедур MCreator
+    // Мосты для процедур MCreator
     public static final DeferredHolder<Item, Item> HELMET = ENDER_ARMOR_HELMET;
     public static final DeferredHolder<Item, Item> CHESTPLATE = ENDER_ARMOR_CHESTPLATE;
     public static final DeferredHolder<Item, Item> LEGGINGS = ENDER_ARMOR_LEGGINGS;
@@ -38,14 +38,12 @@ public class allOfCreateEquipment {
         modEventBus.addListener(this::addCreative);
     }
 
-  private void addCreative(BuildCreativeModeTabEvent event) {
-        // Добавляем слитки во вкладку Ингредиентов
+    private void addCreative(BuildCreativeModeTabEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ENDER_CRYSTAL_INGOT.get());
             event.accept(CRUDE_ENDER_INGOT.get());
             event.accept(ENDER_UPGRADE_SMITHING_TEMPLATE.get());
         }
-        // Добавляем оружие и броню во вкладку Боевого снаряжения
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ENDER_SWORD.get());
             event.accept(ENDER_ARMOR_HELMET.get());
@@ -53,6 +51,5 @@ public class allOfCreateEquipment {
             event.accept(ENDER_ARMOR_LEGGINGS.get());
             event.accept(ENDER_ARMOR_BOOTS.get());
         }
-    }
     }
 }
