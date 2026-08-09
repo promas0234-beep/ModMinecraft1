@@ -9,7 +9,7 @@ public class EnderArmorHelmetTickEventProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-if (sourceentity instanceof net.minecraft.world.entity.player.Player _player 
+ if (entity instanceof net.minecraft.world.entity.player.Player _player 
                 && _player.getInventory().getArmor(3).getItem() == equipment.allofcreate.allOfCreateEquipment.HELMET.get()
                 && _player.getInventory().getArmor(2).getItem() == equipment.allofcreate.allOfCreateEquipment.CHESTPLATE.get()
                 && _player.getInventory().getArmor(1).getItem() == equipment.allofcreate.allOfCreateEquipment.LEGGINGS.get()
