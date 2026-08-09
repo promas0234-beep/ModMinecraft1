@@ -9,10 +9,10 @@ public class EnderArmorChestplateTickEventProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof net.minecraft.world.entity.player.Player _player && _player.getInventory().getArmor(3).getItem() == equipment.allofcreate.item.EnderArmorItem.HELMET.get()
-				&& _player.getInventory().getArmor(2).getItem() == equipment.allofcreate.item.EnderArmorItem.CHESTPLATE.get()
-				&& _player.getInventory().getArmor(1).getItem() == equipment.allofcreate.item.EnderArmorItem.LEGGINGS.get()
-				&& _player.getInventory().getArmor(0).getItem() == equipment.allofcreate.item.EnderArmorItem.BOOTS.get()) {
+ if (sourceentity instanceof net.minecraft.world.entity.player.Player _player && _player.getInventory().getArmor(3).getItem() == equipment.allofcreate.item.EnderArmorItem.Helmet.get()
+                && _player.getInventory().getArmor(2).getItem() == equipment.allofcreate.item.EnderArmorItem.Chestplate.get()
+                && _player.getInventory().getArmor(1).getItem() == equipment.allofcreate.item.EnderArmorItem.Leggings.get()
+                && _player.getInventory().getArmor(0).getItem() == equipment.allofcreate.item.EnderArmorItem.Boots.get()) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, false, false));
 		} else {
