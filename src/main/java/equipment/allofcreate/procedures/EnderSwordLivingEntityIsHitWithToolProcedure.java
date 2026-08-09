@@ -13,7 +13,7 @@ public class EnderSwordLivingEntityIsHitWithToolProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 120, 1, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 120, 1, false, false));
-if (sourceentity instanceof net.minecraft.world.entity.player.Player _player 
+ if (entity instanceof net.minecraft.world.entity.player.Player _player 
                 && _player.getInventory().getArmor(3).getItem() == equipment.allofcreate.allOfCreateEquipment.HELMET.get()
                 && _player.getInventory().getArmor(2).getItem() == equipment.allofcreate.allOfCreateEquipment.CHESTPLATE.get()
                 && _player.getInventory().getArmor(1).getItem() == equipment.allofcreate.allOfCreateEquipment.LEGGINGS.get()
