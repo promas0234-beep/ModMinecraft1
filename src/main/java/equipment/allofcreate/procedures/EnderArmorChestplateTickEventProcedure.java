@@ -10,10 +10,10 @@ public class EnderArmorChestplateTickEventProcedure {
 		if (entity == null)
 			return;
 if (sourceentity instanceof net.minecraft.world.entity.player.Player _player 
-    && _player.getInventory().getArmor(3).getItem() == equipment.allofcreate.allOfCreateEquipment.HELMET.get()
-    && _player.getInventory().getArmor(2).getItem() == equipment.allofcreate.allOfCreateEquipment.CHESTPLATE.get()
-    && _player.getInventory().getArmor(1).getItem() == equipment.allofcreate.allOfCreateEquipment.LEGGINGS.get()
-    && _player.getInventory().getArmor(0).getItem() == equipment.allofcreate.allOfCreateEquipment.BOOTS.get()) {
+                && _player.getInventory().getArmor(3).getItem() == equipment.allofcreate.allOfCreateEquipment.HELMET.get()
+                && _player.getInventory().getArmor(2).getItem() == equipment.allofcreate.allOfCreateEquipment.CHESTPLATE.get()
+                && _player.getInventory().getArmor(1).getItem() == equipment.allofcreate.allOfCreateEquipment.LEGGINGS.get()
+                && _player.getInventory().getArmor(0).getItem() == equipment.allofcreate.allOfCreateEquipment.BOOTS.get()) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, false, false));
 		} else {
